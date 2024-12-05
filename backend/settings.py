@@ -43,7 +43,7 @@ class _UiSettings(BaseSettings):
 
     title: str = "CORA"
     logo: Optional[str] = None
-    chat_logo: Optional[str] = "/assets/cora.png"
+    chat_logo: Optional[str] = "https://www.justice.gouv.qc.ca/fileadmin/templates/img/logo-justiceQuebec.jpg"
     chat_title: str = "CORA"
     chat_description: str = "Assistant d'aide au greffe"
     favicon: str = "/favicon.ico"
