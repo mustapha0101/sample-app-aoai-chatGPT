@@ -12,7 +12,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import styles from './Chat.module.css'
-import Contoso from '../../assets/Contoso.svg'
+import Contoso from '../../assets/cora.png'
 import { XSSAllowTags } from '../../constants/sanatizeAllowables'
 
 import {
@@ -836,7 +836,7 @@ const Chat = () => {
                     <div className={styles.chatMessageGpt}>
                       <Answer
                         answer={{
-                          answer: "Generating answer...",
+                          answer: "Génération de la réponse...",
                           citations: [],
                           generated_chart: null
                         }}
@@ -890,7 +890,7 @@ const Chat = () => {
                     iconProps={{ iconName: 'Add' }}
                     onClick={newChat}
                     disabled={disabledButton()}
-                    aria-label="start a new chat button"
+                    aria-label="Débuter une nouvelle session"
                   />
                 )}
                 <CommandBarButton
@@ -933,7 +933,7 @@ const Chat = () => {
               </Stack>
               <QuestionInput
                 clearOnSend
-                placeholder="Type a new question..."
+                placeholder="Tapez votre question.."
                 disabled={isLoading}
                 onSend={(question, id) => {
                   appStateContext?.state.isCosmosDBAvailable?.cosmosDB
@@ -960,7 +960,7 @@ const Chat = () => {
                 </span>
                 <IconButton
                   iconProps={{ iconName: 'Cancel' }}
-                  aria-label="Close citations panel"
+                  aria-label="Fermer"
                   onClick={() => setIsCitationPanelOpen(false)}
                 />
               </Stack>
