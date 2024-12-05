@@ -41,13 +41,13 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
+    title: str = "CORA"
     logo: Optional[str] = None
-    chat_logo: Optional[str] = None
+    chat_logo: Optional[str] = "/assets/cora.png"
     chat_title: str = "CORA"
     chat_description: str = "Assistant d'aide au greffe"
     favicon: str = "/favicon.ico"
-    show_share_button: bool = True
+    show_share_button: bool = False
     show_chat_history_button: bool = True
 
 
